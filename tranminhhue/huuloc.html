@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu HTML và CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            background-color:#CCFF99;
+            color: #110000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        p {
+            margin-left: 40px; /* Căn lề trái */
+            margin-right: 30px; /* Căn lề phải */
+            margin-top: 10px; /* Khoảng cách phía trên */
+            margin-bottom: 10px; /* Khoảng cách phía dưới */
+            margin: 10px 0;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+		 </style>
+</head>
+<body>
+    <header>
+    <marquee width="100%" direction="left"><p style="color: red;"><strong>Phan Hữu Lộc LỚP 12A3 - TRƯỜNG THPT HOÀNG HOA THÁM</strong></p></marquee>
+    </header>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+h1 {color: red; text-align:center;}
+h2 {color: blue;}
+nav {text-align: right;}
+li {display: inline;
+border: lpx solid blue;
+padding: 5px;
+background-color: lime;
+}
+a:hover{color: red; background-color: cyan;}
+h2 + p{color: red; }
+img {display: none;}
+.img:active + img {display: block ;}
+</style>
+</head>
+<body>
+<h1>Giới thiệu HTML và CSS </h1>
+<nav>
+<ul>
+    <li><a href="#P1">Giới thiệu HTML</a></li>
+    <li><a href="#P2"> Giới thiệu CSS</a></1i>
+</ul>
+    </nav>
+    <h2>HTML là gi?</h2>
+
+<p id="P1">HTML tên viết tắt của HyperText Markup Language, ngôn ngữ đánh đầu siêu văn bản, là ngôn ngữ đặc biệt dùng để
+
+thiết kế nội dung các trang web và được thể hiện bằng trình duyệt.</p>
+
+    <p>cấu trúc mỗi tập HTML là một cấu trúc dạng cây của các phần tử HTML.</p>
+    <p class="img">=>Xem logo của HTML.</p>
+	<img src=" https://fr.w3docs.com/uploads/media/book_gallery/0001/02/849d4286475e04155fd5f21861f16f53db95ac72.png" width="350 ">
+    <p>Link xem thêm chi tiết về HTML <a href="https://en.wikipedia.org/wiki/HTML"> tại dây</a>.</p>
+    <p>Link xem và tự học HTML <a href="https://www.w3schools.com/html/default.asp">tại dây</a>.</p>
+    <h2>CSS là gi?</h2>
+    <P id="P2">CSS (Cascading style Sheets) là ngôn ngữ định dạng đặc biệt được dùng để mô tả cách thể hiện của văn bản HTML trong trang web.</p>
+    <p>Mỗi định dạng css đều có dạng chuẩn là bộ chọn (thuộc tính: giá trị;).</p>
+    <p class="img">=>Xem logo của css.</p>
+    <img src="https://th.bing.com/th/id/OIP.ayAY9cZTL2wpgG7wb_sVjQHaEM?rs=1&pid=ImgDetMainpng"width="450 ">
+    <p>Link xem thêm chi tiết về css <a href="https://en.wikipedia.org/wiki/CSS"> tại đây</a>.</p>
+    <p>Link xem và tự học CSS <a href="https://www.w3schools.com/css/default.asp">tại dây</a>.</p>

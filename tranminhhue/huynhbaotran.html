@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Đăng Ký Tốt Nghiệp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="date"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Đăng Ký Tốt Nghiệp</h1>
+        <form action="/submit_registration" method="POST">
+            <label for="fullName">Họ và Tên:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Nhập họ và tên">
+
+            <label for="dob">Ngày Sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email">
+
+            <label for="major">Ngành Học:</label>
+            <select id="major" name="major" required>
+                <option value="computer_science">Khoa Học Máy Tính</option>
+                <option value="business_administration">Quản Trị Kinh Doanh</option>
+                <option value="engineering">Kỹ Thuật</option>
+                <option value="law">Luật</option>
+                <option value="art">Mỹ Thuật</option>
+            </select>
+
+            <label for="address">Địa Chỉ:</label>
+            <textarea id="address" name="address" rows="4" required placeholder="Nhập địa chỉ của bạn"></textarea>
+
+            <label for="phone">Số Điện Thoại:</label>
+            <input type="text" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+
+            <label for="graduationDate">Dự Kiến Ngày Tốt Nghiệp:</label>
+            <input type="date" id="graduationDate" name="graduationDate" required>
+
+            <input type="submit" value="Đăng Ký Tốt Nghiệp">
+        </form>
+    </div>
+
+</body>
+</html>
+
+

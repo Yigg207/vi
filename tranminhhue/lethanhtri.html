@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Hoạt Động Câu Lạc Bộ Tin Học</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .activity {
+            background-color: #e7f3fe;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lịch Hoạt Động Câu Lạc Bộ Tin Học Trường Hoàng Hoa Thám</h1>
+        <button class="button" onclick="readSchedule()">Giới thiệu lịch hoạt động</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ngày</th>
+                    <th>Thời Gian</th>
+                    <th>Hoạt Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="activity">
+                    <td>Thứ Hai</td>
+                    <td>14:00 - 16:00</td>
+                    <td>Lớp học lập trình cơ bản</td>
+                </tr>
+                <tr class="activity">
+                    <td>Thứ Ba</td>
+                    <td>15:00 - 17:00</td>
+                    <td>Thực hành thiết kế website</td>
+                </tr>
+                <tr class="highlight">
+                    <td>Thứ Tư</td>
+                    <td>13:00 - 15:00</td>
+                    <td>Hội thảo về trí tuệ nhân tạo</td>
+                </tr>
+                <tr class="activity">
+                    <td>Thứ Năm</td>
+                    <td>14:30 - 16:30</td>
+                    <td>Cuộc thi giải thuật - Thực hành</td>
+                </tr>
+                <tr class="activity">
+                    <td>Thứ Sáu</td>
+                    <td>09:00 - 11:00</td>
+                    <td>Phát triển phần mềm nhóm</td>
+                </tr>
+                <tr class="activity">
+                    <td>Thứ Bảy</td>
+                    <td>08:00 - 12:00</td>
+                    <td>Chia sẻ dự án và ý tưởng</td>
+                </tr>
+                <tr class="activity">
+                    <td>Chủ Nhật</td>
+                    <td>Không có hoạt động</td>
+                    <td>Ngày nghỉ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  xfh
+    <script>
+        function readSchedule() {
+            const text = `
+            Lịch hoạt động câu lạc bộ tin học trường Hoàng Hoa Thám:
+            Vào thứ hai từ 14 giờ đến 16 giờ, chúng ta có lớp học lập trình cơ bản.
+            Vào thứ ba từ 15 giờ đến 17 giờ, là thực hành thiết kế website.
+            Vào thứ tư từ 13 giờ đến 15 giờ, tổ chức hội thảo về trí tuệ nhân tạo.
+            Vào thứ năm từ 14 giờ 30 đến 16 giờ 30, cuộc thi giải thuật thực hành.
+            Vào thứ sáu từ 9 giờ đến 11 giờ, phát triển phần mềm nhóm.
+            Vào thứ bảy từ 8 giờ đến 12 giờ, chia sẻ dự án và ý tưởng.
+    
+
